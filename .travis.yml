@@ -3,6 +3,6 @@ compiler:
   - gcc
 before_install:
   - sudo apt-get update -qq
-  - apt --list installed
+  - dpkg -l 
 script:
  - uname -a
