@@ -1,0 +1,8 @@
+language: cpp
+compiler:
+  - gcc
+before_install:
+  - sudo apt-get update -qq
+  - apt --list installed
+script:
+ - uname -a
