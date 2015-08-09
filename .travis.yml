@@ -1,8 +1,16 @@
+sudo: false
 language: cpp
 compiler:
   - gcc
-before_install:
-  - sudo apt-get update -qq
-  - dpkg -l 
+addons:
+  apt:
+    packages:
+    - expat
+    - fop
+    - valgrind
+    - xsltproc
+#before_install:
+#  - sudo apt-get update -qq
+#  - dpkg -l 
 script:
- - uname -a
+ - uname -a && dpkg -l
