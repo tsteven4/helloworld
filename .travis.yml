@@ -3,4 +3,4 @@ language: cpp
 compiler:
   - gcc
 script:
- - uname -a && dpkg -l
+ - locale && uname -a && dpkg -l
