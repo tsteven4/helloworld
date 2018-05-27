@@ -4,3 +4,4 @@ compiler:
   - gcc
 script:
  - locale && uname -a && dpkg -l
+ - env
