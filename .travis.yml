@@ -6,5 +6,6 @@ script:
  - locale && uname -a && dpkg -l
  - env
  - which java
+ - java -version
  - which gcov
  - which gcovr
