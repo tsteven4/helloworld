@@ -1,8 +1,15 @@
 sudo: false
 language: cpp
-compiler:
-  - gcc
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      compiler: gcc
+    - os: osx
+      compiler: clang
+
 script:
+ - echo hello | openssl dgst -sha512 | cut -d " " -f 2
  - locale && uname -a && dpkg -l
  - env
  - which java
