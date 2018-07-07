@@ -12,7 +12,8 @@ script:
  - echo hello | openssl dgst -sha512 | cut -d " " -f 2
  - locale && uname -a && dpkg -l
  - env
+ - cmake -version
  - which java
  - java -version
  - which gcov
- - which gcovr
+ - which gcovr || true
