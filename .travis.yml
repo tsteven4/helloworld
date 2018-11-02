@@ -23,3 +23,4 @@ script:
  - java -version
  - which gcov
  - which gcovr || true
+ - getopt --test; echo $?
